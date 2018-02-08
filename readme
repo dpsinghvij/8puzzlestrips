@@ -1,0 +1,40 @@
+How to Run Program:-
+For linux/unix/OsX based system run
+sh assign1.sh
+For windows based system double click on assign1.bat
+I have also include jar file with the project
+You can run using command
+java -jar AIAssignment1.jar
+
+Compilation and Execution
+I have created this project using java, To view code you can use Intellij to load the project.
+This program has been tested for following matrix
+1.)
+1 2 3
+8 6 4
+7 5 0
+Input (1,2,3,8,6,4,7,5,0)
+
+2.)
+1 2 3
+8 4 5
+7 6 0
+Input (1,2,3,8,4,5,7,6,0)
+
+3.)
+1 2 3
+8 4 0
+7 6 5
+Input (1,2,3,8,4,0,7,6,5)
+
+4.)
+1 2 3
+7 8 4
+0 6 5
+Input (1,2,3,7,8,4,0,6,5)
+
+Details:
+I have made some tweaks in STRIPS knowledge base for scenarios in which we had to swap a number with zero
+as during these scenarios it is necessary to save the last state of the number instead of clearing it directly
+as it is done in other scenarios For these scenarios, I have replaced clear method with On method which instead of clearing
+the value, saves previous value at location where 0 was located. Also a precondition of zero has been removed
